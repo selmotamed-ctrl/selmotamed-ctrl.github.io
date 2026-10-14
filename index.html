@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Salem Elmotamed — Senior Full Stack Engineer</title>
+<meta name="description" content="Senior Full Stack Engineer specializing in fintech, double-entry ledgers, payment gateways and distributed systems. Based in Tripoli, Libya.">
+<meta name="theme-color" content="#0a0d14">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a0d14'/%3E%3Ctext x='32' y='43' font-size='34' font-family='Arial' font-weight='700' text-anchor='middle' fill='%2338e8c6'%3ESE%3C/text%3E%3C/svg%3E">
+<style>
+:root{--bg:#0a0d14;--bg2:#10141e;--card:#131825;--line:#222a3b;--tx:#e8ecf5;--mu:#8e98b0;--ac:#38e8c6;--ac2:#7c8cff;--sh:0 10px 40px rgba(0,0,0,.35)}
+:root[data-theme=light]{--bg:#f6f7fb;--bg2:#eceef6;--card:#fff;--line:#dde1ee;--tx:#141826;--mu:#59627a;--ac:#0a9d86;--ac2:#4a5bd8;--sh:0 10px 30px rgba(30,40,80,.08)}
+@media(prefers-color-scheme:light){:root:not([data-theme=dark]){--bg:#f6f7fb;--bg2:#eceef6;--card:#fff;--line:#dde1ee;--tx:#141826;--mu:#59627a;--ac:#0a9d86;--ac2:#4a5bd8;--sh:0 10px 30px rgba(30,40,80,.08)}}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{background:var(--bg);color:var(--tx);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+#bar{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--ac),var(--ac2));z-index:60}
+nav{position:fixed;top:0;left:0;right:0;z-index:50;backdrop-filter:blur(14px);background:color-mix(in srgb,var(--bg) 78%,transparent);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-weight:800;letter-spacing:-.5px}.logo b{color:var(--ac)}
+nav ul{display:flex;gap:22px;list-style:none;align-items:center;font-size:14px;color:var(--mu)}
+nav ul a:hover{color:var(--tx)}
+#tg{background:none;border:1px solid var(--line);color:var(--tx);width:34px;height:34px;border-radius:50%;cursor:pointer;font-size:15px}
+#tg:hover{border-color:var(--ac)}
+@media(max-width:760px){nav ul li:not(:last-child){display:none}}
+#hero{position:relative;min-height:100vh;display:flex;align-items:center;padding:110px 0 70px;overflow:hidden}
+#cv{position:absolute;inset:0;width:100%;height:100%;opacity:.75}
+#hero .wrap{position:relative;z-index:2}
+.pill{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--line);background:var(--card);padding:6px 14px;border-radius:99px;font-size:13px;color:var(--mu)}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--ac);box-shadow:0 0 0 0 var(--ac);animation:pu 2s infinite}
+@keyframes pu{70%{box-shadow:0 0 0 9px transparent}100%{box-shadow:0 0 0 0 transparent}}
+h1{font-size:clamp(42px,8vw,88px);line-height:1.02;letter-spacing:-2.5px;margin:22px 0 14px;font-weight:800}
+.grad{background:linear-gradient(100deg,var(--ac),var(--ac2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.role{font-size:clamp(18px,2.6vw,26px);color:var(--mu);min-height:1.6em}
+.role span{color:var(--tx)}.cur{display:inline-block;width:2px;height:1em;background:var(--ac);margin-left:3px;vertical-align:-2px;animation:bl 1s steps(1) infinite}
+@keyframes bl{50%{opacity:0}}
+.lead{max-width:640px;margin:22px 0 32px;color:var(--mu);font-size:17px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:12px 24px;border-radius:12px;font-weight:600;font-size:15px;border:1px solid var(--line);transition:.25s;display:inline-block}
+.btn.p{background:linear-gradient(100deg,var(--ac),var(--ac2));color:#06101a;border:0}
+.btn:hover{transform:translateY(-3px);box-shadow:var(--sh)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:16px;margin-top:56px;max-width:620px}
+.stat{border-left:2px solid var(--ac);padding-left:14px}
+.stat b{font-size:34px;display:block;line-height:1.1}.stat small{color:var(--mu);font-size:13px}
+section{padding:96px 0}
+.alt{background:var(--bg2)}
+.eyebrow{color:var(--ac);font-size:13px;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px}
+h2{font-size:clamp(28px,4.4vw,44px);letter-spacing:-1px;line-height:1.15;margin-bottom:14px}
+.sub{color:var(--mu);max-width:660px;margin-bottom:44px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:20px}
+.card{position:relative;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px;overflow:hidden;transition:transform .3s,border-color .3s,box-shadow .3s}
+.card::before{content:"";position:absolute;inset:0;background:radial-gradient(380px circle at var(--x,50%) var(--y,0%),color-mix(in srgb,var(--ac) 16%,transparent),transparent 60%);opacity:0;transition:opacity .3s;pointer-events:none}
+.card:hover{transform:translateY(-5px);border-color:var(--ac);box-shadow:var(--sh)}.card:hover::before{opacity:1}
+.card .ic{font-size:26px;margin-bottom:12px}
+.card h3{font-size:19px;margin-bottom:8px;letter-spacing:-.2px}
+.card p{color:var(--mu);font-size:15px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}
+.tags span{font-size:12px;padding:3px 10px;border-radius:99px;border:1px solid var(--line);color:var(--mu)}
+.wide{grid-column:1/-1}
+@media(min-width:900px){.wide{grid-column:span 2}}
+.tl{position:relative;margin-left:8px;padding-left:30px;border-left:2px solid var(--line)}
+.job{position:relative;margin-bottom:34px}
+.job::before{content:"";position:absolute;left:-39px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:3px solid var(--ac)}
+.job h3{font-size:19px}.job h3 em{font-style:normal;color:var(--ac)}
+.when{color:var(--mu);font-size:13px;margin:2px 0 8px}
+.job ul{list-style:none;color:var(--mu);font-size:15px}
+.job li{padding-left:18px;position:relative;margin-bottom:6px}
+.job li::before{content:"▹";position:absolute;left:0;color:var(--ac)}
+.sk{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.sk .card{padding:22px}.sk h4{font-size:14px;color:var(--ac);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:12px}
+.sk .tags{margin:0}.sk .tags span{color:var(--tx);background:var(--bg2)}
+.cta{text-align:center}.cta .sub{margin-inline:auto}
+.links{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:8px}
+footer{padding:30px 0;text-align:center;color:var(--mu);font-size:13px;border-top:1px solid var(--line)}
+.rv{opacity:0;transform:translateY(28px);transition:opacity .8s,transform .8s}.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+<nav><div class="wrap"><a href="#top" class="logo">salem<b>.</b>dev</a>
+<ul><li><a href="#work">Work</a></li><li><a href="#exp">Experience</a></li><li><a href="#skills">Skills</a></li><li><a href="#contact">Contact</a></li><li><button id="tg" aria-label="Toggle theme">◐</button></li></ul></div></nav>
+
+<header id="hero"><canvas id="cv" aria-hidden="true"></canvas>
+<div class="wrap" id="top">
+<span class="pill mono"><i class="dot"></i> Open to Full Stack roles · Tripoli, Libya</span>
+<h1>Salem<br><span class="grad">Elmotamed</span></h1>
+<div class="role mono">&gt; <span id="ty"></span><i class="cur"></i></div>
+<p class="lead">Senior full stack engineer with 6+ years building the systems money moves through: double-entry ledgers, payment gateways, multi-tenant banking SaaS and real-time platforms. I turn ambiguous financial and operational requirements into auditable, maintainable architecture.</p>
+<div class="btns"><a class="btn p" href="#work">View my work</a><a class="btn" href="#contact">Get in touch</a></div>
+<div class="stats">
+<div class="stat"><b data-n="6" data-s="+">0</b><small>years shipping production systems</small></div>
+<div class="stat"><b data-n="11" data-s="">0</b><small>programming languages</small></div>
+<div class="stat"><b data-n="9" data-s="">0</b><small>teams &amp; companies</small></div>
+</div></div></header>
+
+<section id="work"><div class="wrap">
+<p class="eyebrow mono rv">// selected work</p><h2 class="rv">Systems I've designed and built</h2>
+<p class="sub rv">From wallet ledgers and payment rails to WhatsApp gateways and robotics. The common thread is correctness under real-world constraints.</p>
+<div class="grid">
+<article class="card rv wide"><div class="ic">💳</div><h3>Payment Gateway Platform · NeomPay</h3><p>Architected a gateway spanning a merchant portal, end-client checkout, admin back office and POS, where every payment method is a pluggable "rail". New providers ship with a single adapter, and checkout, guard and ledger code stay untouched. Four control layers (AML holds, velocity limits, versioned commission profiles, merchant governance) are backed by maker-checker approvals on every sensitive change.</p><div class="tags"><span>Architecture</span><span>Pluggable rails</span><span>AML</span><span>Maker-checker</span></div></article>
+<article class="card rv"><div class="ic">📒</div><h3>Treasury-Rooted Double-Entry Ledger</h3><p>Every balance traces to a single Treasury Account. Per-account checkpoint snapshots make balance reads fast, and a scheduled reconciliation proves treasury equals wallets plus income, AML-hold and chargeback-reserve balances.</p><div class="tags"><span>Ledger design</span><span>Reconciliation</span><span>GAAP</span></div></article>
+<article class="card rv"><div class="ic">🎁</div><h3>Loyalty &amp; Rewards Engine</h3><p>A dual-ledger design that keeps points off the money ledger, so rewards can never create phantom funds. Rule engine (profile × service; fixed, tiered, percentage), versioned rates, anti-abuse controls and monthly three-way reconciliation.</p><div class="tags"><span>Rule engine</span><span>Dual ledger</span><span>Anti-abuse</span></div></article>
+<article class="card rv"><div class="ic">🎟️</div><h3>Voucher Provider System</h3><p>Data-driven provider integrations with five auth methods, best-price server-side routing and idempotent purchases. Fallback fires only on provably safe failures; ambiguous outcomes are held as UNKNOWN for manual reconciliation rather than risk a double purchase.</p><div class="tags"><span>Idempotency</span><span>Routing</span><span>Encrypted secrets</span></div></article>
+<article class="card rv"><div class="ic">🏦</div><h3>Saraf · Multi-Tenant Banking SaaS</h3><p>Banking and currency-exchange platform on a double-entry accounting core: branch-specific balances, fees, debt tracking and exchange workflows, with every transaction balanced, auditable and traceable. Includes GAAP-compliant accounting with Central Bank of Libya integration.</p><div class="tags"><span>Node.js</span><span>MySQL</span><span>Vue</span><span>React</span></div></article>
+<article class="card rv"><div class="ic">📈</div><h3>Elhelga · Currency Market Intelligence</h3><p>Real-time platform for the Libyan currency market: ingests live exchange rates, detects meaningful changes and pushes them over WebSocket, WhatsApp and Facebook. Replaced fragile Puppeteer automation with Baileys and the official Pages API.</p><div class="tags"><span>Node.js</span><span>WebSocket</span><span>Vue 3</span><span>Flutter</span></div></article>
+<article class="card rv"><div class="ic">💬</div><h3>Textly · SMS &amp; WhatsApp SaaS</h3><p>Co-built a multi-tenant messaging platform around a subscription and points usage model. The Go WhatsApp gateway (whatsmeow) uses a consistent-hash proxy manager to give each tenant a stable upstream proxy, cutting ban risk.</p><div class="tags"><span>Go</span><span>Next.js</span><span>Expo</span><span>MySQL</span></div></article>
+<article class="card rv"><div class="ic">⚔️</div><h3>JS-Katana · Open-Source Framework</h3><p>TypeScript-first web server framework on Bun with file-based routing and a dual HTTP/WebSocket transport that switches dynamically for reliability and performance.</p><div class="tags"><span>TypeScript</span><span>Bun</span><span>Open source</span></div></article>
+<article class="card rv"><div class="ic">📡</div><h3>RFID Platform &amp; Enterprise DSL</h3><p>Built an end-to-end RFID platform: real-time Node.js runtimes on reader hardware up to Vue and React Native apps. Also designed a custom DSL that made business-system infrastructure extensible without per-feature code.</p><div class="tags"><span>Embedded Node</span><span>React Native</span><span>DSL</span></div></article>
+<article class="card rv"><div class="ic">🤖</div><h3>Robotics Sub-OS</h3><p>Led programming for an abstract robotics platform with custom dashboards on a distributed sub-OS. Integrated microcontrollers, a central action server, LiDAR-based autonomous navigation and sensor fusion into one delivered system.</p><div class="tags"><span>ROS</span><span>LiDAR</span><span>C/C++</span><span>Python</span></div></article>
+<article class="card rv"><div class="ic">🏥</div><h3>TPA Healthcare Blueprint</h3><p>Authored a full technical implementation blueprint for a third-party-administrator healthcare platform, including domain primers that bring engineers new to insurance up to speed.</p><div class="tags"><span>Architecture</span><span>Healthcare</span><span>Documentation</span></div></article>
+</div></div></section>
+
+<section id="exp" class="alt"><div class="wrap">
+<p class="eyebrow mono rv">// experience</p><h2 class="rv">Where I've done the work</h2><p class="sub rv">Several concurrent engagements, because good systems are rarely built in isolation.</p>
+<div class="tl">
+<div class="job rv"><h3>Software Architect · <em>Neom (NeomPay)</em></h3><div class="when mono">2026 — Present</div><ul><li>Payment gateway, treasury ledger, loyalty and voucher platforms end to end.</li><li>Authored the formal spec for the 12-digit wallet ID (Feistel-permuted sequence, Luhn checksum, typed codes).</li></ul></div>
+<div class="job rv"><h3>Software Engineer · <em>Elhelga</em></h3><div class="when mono">Jun 2026 — Present</div><ul><li>Own change detection, overlap-protected scheduling, subscriptions, payments and the Vue 3 and Flutter clients.</li></ul></div>
+<div class="job rv"><h3>Software Engineer · <em>Saraf</em></h3><div class="when mono">Feb 2026 — Present</div><ul><li>Designed a multi-tenant banking and currency-exchange SaaS on a double-entry core.</li></ul></div>
+<div class="job rv"><h3>Lead Software Engineer · <em>Tawasol Libya</em></h3><div class="when mono">May 2025 — Apr 2026</div><ul><li>Led Vue 3 dashboards used by thousands of employees and customers, backed by C# services; owned performance and UI consistency.</li></ul></div>
+<div class="job rv"><h3>Software Engineer · <em>Textly SMS</em></h3><div class="when mono">Apr 2025 — Present</div><ul><li>Core architecture, Go WhatsApp gateway, Next.js and Expo clients, reliable message orchestration.</li></ul></div>
+<div class="job rv"><h3>Software Engineer · <em>Aramtech Libya</em></h3><div class="when mono">Feb 2022 — Mar 2025</div><ul><li>Led JS-Katana, built the RFID platform, designed the enterprise DSL, wrote the TPA blueprint.</li></ul></div>
+<div class="job rv"><h3>Head of Programming · <em>Stream Business Incubator</em></h3><div class="when mono">Feb 2021 — Mar 2022</div><ul><li>Led robotics software: distributed sub-OS, LiDAR navigation and sensor fusion.</li></ul></div>
+<div class="job rv"><h3>IT Manager &amp; Programmer · <em>Tafawoek</em></h3><div class="when mono">Apr 2019 — Jan 2021</div><ul><li>Python protocols connecting medical instruments to an API; Laravel and Vue apps; server administration.</li></ul></div>
+</div>
+<p class="rv mono" style="color:var(--mu);font-size:14px;margin-top:8px">🎓 B.Sc. Electrical, Electronics &amp; Communications Engineering · University of Tripoli · 2015 — 2020</p>
+</div></section>
+
+<section id="skills"><div class="wrap">
+<p class="eyebrow mono rv">// toolbox</p><h2 class="rv">Full stack, plus the layers beneath</h2><p class="sub rv">Comfortable from microcontroller firmware to double-entry accounting to pixel-level UI.</p>
+<div class="sk">
+<div class="card rv"><h4>Languages</h4><div class="tags"><span>TypeScript</span><span>JavaScript</span><span>Go</span><span>Python</span><span>PHP</span><span>Rust</span><span>C / C++</span><span>Dart</span><span>Java</span><span>Kotlin</span></div></div>
+<div class="card rv"><h4>Backend &amp; Systems</h4><div class="tags"><span>Node.js</span><span>Bun</span><span>Express</span><span>FastAPI</span><span>Laravel</span><span>WebSockets</span><span>Microservices</span><span>Queues</span></div></div>
+<div class="card rv"><h4>Frontend &amp; Mobile</h4><div class="tags"><span>Vue 3</span><span>React</span><span>Next.js</span><span>Flutter</span><span>React Native / Expo</span><span>Tailwind</span></div></div>
+<div class="card rv"><h4>Data &amp; Infra</h4><div class="tags"><span>PostgreSQL</span><span>MySQL</span><span>Redis</span><span>MongoDB</span><span>SQLite</span><span>Docker</span><span>Linux</span><span>Nginx</span><span>CI/CD</span></div></div>
+<div class="card rv"><h4>Fintech</h4><div class="tags"><span>Double-entry accounting</span><span>Ledger design</span><span>Payment gateways</span><span>Multi-tenancy</span><span>KYC / AML</span><span>Reconciliation</span><span>Maker-checker</span></div></div>
+<div class="card rv"><h4>Embedded &amp; Robotics</h4><div class="tags"><span>ROS</span><span>LiDAR</span><span>RFID</span><span>Arduino / Teensy</span><span>Sensor fusion</span></div></div>
+</div></div></section>
+
+<section id="contact" class="alt cta"><div class="wrap">
+<p class="eyebrow mono rv">// contact</p><h2 class="rv">Let's build something that has to be right</h2>
+<p class="sub rv">Looking for a Full Stack Engineer role on fintech, payments or distributed systems? I'd love to talk.</p>
+<div class="links rv"><a class="btn p" href="mailto:s.elmotamed96@gmail.com">s.elmotamed96@gmail.com</a><a class="btn" href="https://linkedin.com/in/salem-elmotamed-2059b7176" target="_blank" rel="noopener">LinkedIn</a><a class="btn" href="tel:+218911600863">+218 91 160 0863</a></div>
+</div></section>
+<footer>© <span id="yr"></span> Salem Elmotamed · Tripoli, Libya · salem-elmotamed.ly</footer>
+
+<script>
+(function(){
+var d=document,r=d.documentElement;
+/* theme */
+try{var t=localStorage.getItem('th');if(t)r.dataset.theme=t}catch(e){}
+d.getElementById('tg').onclick=function(){var cur=r.dataset.theme||(matchMedia('(prefers-color-scheme:light)').matches?'light':'dark'),n=cur==='dark'?'light':'dark';r.dataset.theme=n;try{localStorage.setItem('th',n)}catch(e){}};
+d.getElementById('yr').textContent=new Date().getFullYear();
+/* typing */
+var roles=['Senior Full Stack Engineer','Fintech & Ledger Architect','Distributed Systems Builder','Payments & Wallet Platforms'],ty=d.getElementById('ty'),ri=0,ci=0,del=false;
+(function tick(){var w=roles[ri];ty.textContent=w.slice(0,ci);if(!del&&ci===w.length){del=true;return setTimeout(tick,1600)}if(del&&ci===0){del=false;ri=(ri+1)%roles.length}ci+=del?-1:1;setTimeout(tick,del?28:60)})();
+/* reveal + counters */
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+d.querySelectorAll('.rv').forEach(function(el,i){el.style.transitionDelay=(i%3)*80+'ms';io.observe(el)});
+d.querySelectorAll('[data-n]').forEach(function(el){var n=+el.dataset.n,s=el.dataset.s,st=null;requestAnimationFrame(function f(ts){st=st||ts;var p=Math.min((ts-st)/1400,1);el.textContent=Math.round(n*(1-Math.pow(1-p,3)))+s;if(p<1)requestAnimationFrame(f)})});
+/* progress bar + card spotlight */
+var bar=d.getElementById('bar');addEventListener('scroll',function(){bar.style.width=(scrollY/(r.scrollHeight-innerHeight)*100)+'%'},{passive:true});
+d.querySelectorAll('.card').forEach(function(c){c.addEventListener('pointermove',function(e){var b=c.getBoundingClientRect();c.style.setProperty('--x',e.clientX-b.left+'px');c.style.setProperty('--y',e.clientY-b.top+'px')})});
+/* network canvas */
+var cv=d.getElementById('cv'),x=cv.getContext('2d'),W,H,P=[],m={x:-999,y:-999},still=matchMedia('(prefers-reduced-motion:reduce)').matches,run=true;
+function rs(){W=cv.width=cv.offsetWidth;H=cv.height=cv.offsetHeight;P=[];for(var i=0,n=Math.min(90,W*H/14000|0);i<n;i++)P.push({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.5,vy:(Math.random()-.5)*.5})}
+rs();addEventListener('resize',rs);
+d.getElementById('hero').addEventListener('pointermove',function(e){var b=cv.getBoundingClientRect();m.x=e.clientX-b.left;m.y=e.clientY-b.top});
+new IntersectionObserver(function(e){run=e[0].isIntersecting;if(run&&!still)draw()}).observe(cv);
+function col(){return getComputedStyle(r).getPropertyValue('--ac').trim()||'#38e8c6'}
+function draw(){if(!run)return;x.clearRect(0,0,W,H);var c=col();
+for(var i=0;i<P.length;i++){var p=P[i];if(!still){p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>W)p.vx*=-1;if(p.y<0||p.y>H)p.vy*=-1}
+x.fillStyle=c;x.globalAlpha=.8;x.beginPath();x.arc(p.x,p.y,1.8,0,6.3);x.fill();
+for(var j=i+1;j<P.length;j++){var q=P[j],dx=p.x-q.x,dy=p.y-q.y,dd=dx*dx+dy*dy;if(dd<14400){x.globalAlpha=(1-dd/14400)*.35;x.strokeStyle=c;x.beginPath();x.moveTo(p.x,p.y);x.lineTo(q.x,q.y);x.stroke()}}
+var mx=p.x-m.x,my=p.y-m.y,md=mx*mx+my*my;if(md<22500){x.globalAlpha=(1-md/22500)*.6;x.strokeStyle=c;x.beginPath();x.moveTo(p.x,p.y);x.lineTo(m.x,m.y);x.stroke()}}
+x.globalAlpha=1;if(!still)requestAnimationFrame(draw)}
+draw();
+})();
+</script>
+</body>
+</html>
